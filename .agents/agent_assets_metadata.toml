@@ -1,0 +1,62 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "kPLWW12Q4E75-rZeDwst0"
+uri = "file://artifacts/ems-mobile-cover/public/images/collection-jagannath.png"
+type = "image"
+title = "Jagannath chariot festival phone cover"
+
+[[generated]]
+id = "pOx5aC5ydY3cEA393Cg7A"
+uri = "file://artifacts/ems-mobile-cover/public/images/collection-ikat.png"
+type = "image"
+title = "Sambalpuri ikat pattern phone cover"
+
+[[generated]]
+id = "rfkqRG8NNtGO8SFnFcRgj"
+uri = "file://artifacts/ems-mobile-cover/public/images/collection-samaleswari.png"
+type = "image"
+title = "Goddess Samaleswari phone cover"
+
+[[generated]]
+id = "FwResVkr910qDboarvBvj"
+uri = "file://artifacts/ems-mobile-cover/public/images/collection-tribal.png"
+type = "image"
+title = "Dhokra tribal art phone cover"
+
+[[generated]]
+id = "vXbwah40KLVsyv3TIR9Ut"
+uri = "file://artifacts/ems-mobile-cover/public/images/ready-1.png"
+type = "image"
+title = "Sambalpuri phone case variation 1"
+
+[[generated]]
+id = "U8TTvmEz-nD2Ug88x2l-P"
+uri = "file://artifacts/ems-mobile-cover/public/images/ready-2.png"
+type = "image"
+title = "Sambalpuri phone case variation 2"
+
+[[generated]]
+id = "3kw5iwn83SEdNgl5qxqgw"
+uri = "file://artifacts/ems-mobile-cover/public/images/ready-3.png"
+type = "image"
+title = "Sambalpuri phone case variation 3"
+
+[[generated]]
+id = "mWhWdMB43aUn7q6tF1K5k"
+uri = "file://artifacts/ems-mobile-cover/public/images/ready-4.png"
+type = "image"
+title = "Sambalpuri phone case variation 4"
+
+[[generated]]
+id = "Lw7KSMDx4OU5P9byURwKH"
+uri = "file://artifacts/ems-mobile-cover/public/images/ready-5.png"
+type = "image"
+title = "Sambalpuri phone case variation 5"
+
+[[generated]]
+id = "t-Cw4KXjcxGXUS1BNJlCN"
+uri = "file://artifacts/ems-mobile-cover/public/images/ready-6.png"
+type = "image"
+title = "Sambalpuri phone case variation 6"
