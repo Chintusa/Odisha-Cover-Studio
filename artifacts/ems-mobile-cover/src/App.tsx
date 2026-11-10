@@ -3,16 +3,30 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import NotFound from "@/pages/not-found";
 import { Home } from "@/pages/Home";
 
 const queryClient = new QueryClient();
+
+function getRouterBase(): string {
+  // Support GitHub Pages subpath (e.g. username.github.io/Odisha-Cover-Studio/)
+  if (typeof window !== "undefined" && window.location.hostname.endsWith("github.io")) {
+    const firstSegment = window.location.pathname.split("/").filter(Boolean)[0];
+    if (firstSegment) {
+      return `/${firstSegment}`;
+    }
+  }
+  const base = import.meta.env.BASE_URL;
+  if (base && base.startsWith("/") && base !== "/") {
+    return base.replace(/\/$/, "");
+  }
+  return "";
+}
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
-      <Route component={NotFound} />
+      <Route component={Home} />
     </Switch>
   );
 }
@@ -22,7 +36,7 @@ function App() {
     <ThemeProvider defaultTheme="dark">
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
-          <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
+          <WouterRouter base={getRouterBase()}>
             <Router />
           </WouterRouter>
           <Toaster />
