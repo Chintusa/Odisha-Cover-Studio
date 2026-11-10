@@ -415,7 +415,7 @@ export function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
             <div className="lg:col-span-2">
               <span className="text-3xl font-bold font-serif tracking-tight text-primary block mb-4">
-                EMS <span className="text-white">Cover</span>
+                Odisha <span className="text-white">Cover Studio</span>
               </span>
               <p className="text-gray-400 max-w-sm mb-8 leading-relaxed">
                 Odisha's premier destination for culturally inspired, premium mobile covers and expert lamination services. Carry your heritage with pride.
@@ -461,7 +461,7 @@ export function Home() {
           </div>
           
           <div className="pt-8 border-t border-white/10 text-center md:text-left flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
-            <p>&copy; {new Date().getFullYear()} EMS Mobile Cover. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Odisha Cover Studio. All rights reserved.</p>
             <p className="mt-2 md:mt-0">Designed with pride in Odisha.</p>
           </div>
         </div>

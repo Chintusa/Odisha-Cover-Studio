@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "wouter";
 import { useTheme } from "@/components/ThemeProvider";
-import { Moon, Sun, MessageCircle, Menu } from "lucide-react";
+import { Moon, Sun, MessageCircle, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function Navigation() {
   const { theme, setTheme } = useTheme();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -13,7 +14,7 @@ export function Navigation() {
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-2">
             <span className="text-xl font-bold font-serif tracking-tight text-primary">
-              EMS <span className="text-foreground">Cover</span>
+              Odisha <span className="text-foreground">Cover Studio</span>
             </span>
           </Link>
         </div>
@@ -44,11 +45,68 @@ export function Navigation() {
             </Button>
           </a>
           
-          <Button variant="ghost" size="icon" className="md:hidden">
-            <Menu className="h-5 w-5" />
+          <Button 
+            variant="ghost" 
+            size="icon" 
+            className="md:hidden"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle navigation menu"
+          >
+            {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </Button>
         </div>
       </div>
+
+      {mobileMenuOpen && (
+        <div className="md:hidden border-b border-border bg-background px-4 py-4 flex flex-col gap-3">
+          <a 
+            href="#collections" 
+            onClick={() => setMobileMenuOpen(false)}
+            className="text-sm font-medium py-2 hover:text-primary transition-colors"
+          >
+            Collections
+          </a>
+          <a 
+            href="#ready-stock" 
+            onClick={() => setMobileMenuOpen(false)}
+            className="text-sm font-medium py-2 hover:text-primary transition-colors"
+          >
+            Ready Stock
+          </a>
+          <a 
+            href="#lamination" 
+            onClick={() => setMobileMenuOpen(false)}
+            className="text-sm font-medium py-2 hover:text-primary transition-colors"
+          >
+            Lamination Studio
+          </a>
+          <a 
+            href="#wholesale" 
+            onClick={() => setMobileMenuOpen(false)}
+            className="text-sm font-medium py-2 hover:text-primary transition-colors"
+          >
+            Wholesale Program
+          </a>
+          <a 
+            href="#stories" 
+            onClick={() => setMobileMenuOpen(false)}
+            className="text-sm font-medium py-2 hover:text-primary transition-colors"
+          >
+            Stories & Reviews
+          </a>
+          <a 
+            href="https://wa.me/919999999999" 
+            target="_blank" 
+            rel="noreferrer"
+            className="pt-2"
+          >
+            <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 gap-2">
+              <MessageCircle className="h-4 w-4" />
+              WhatsApp Us
+            </Button>
+          </a>
+        </div>
+      )}
     </nav>
   );
 }
