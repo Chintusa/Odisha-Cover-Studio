@@ -5,28 +5,28 @@ import { motion } from "framer-motion";
 
 export function Home() {
   const collections = [
-    { title: "Traditional Ikat", desc: "Classic geometric precision", image: "/images/collection-ikat.png" },
-    { title: "Jagannath Collection", desc: "Divine motifs in rich hues", image: "/images/collection-jagannath.png" },
-    { title: "Samaleswari", desc: "Cultural pride and heritage", image: "/images/collection-samaleswari.png" },
-    { title: "Tribal Art", desc: "Rooted in ancient Dhokra", image: "/images/collection-tribal.png" }
+    { title: "Traditional Ikat", desc: "Classic geometric precision", image: "./images/collection-ikat.png" },
+    { title: "Jagannath Collection", desc: "Divine motifs in rich hues", image: "./images/collection-jagannath.png" },
+    { title: "Samaleswari", desc: "Cultural pride and heritage", image: "./images/collection-samaleswari.png" },
+    { title: "Tribal Art", desc: "Rooted in ancient Dhokra", image: "./images/collection-tribal.png" }
   ];
 
   const readyStock = [
-    "/images/ready-1.png",
-    "/images/ready-2.png",
-    "/images/ready-3.png",
-    "/images/ready-4.png",
-    "/images/ready-5.png",
-    "/images/ready-6.png"
+    "./images/ready-1.png",
+    "./images/ready-2.png",
+    "./images/ready-3.png",
+    "./images/ready-4.png",
+    "./images/ready-5.png",
+    "./images/ready-6.png"
   ];
 
   const gallery = [
-    "/images/gallery-1.png",
-    "/images/gallery-2.png",
-    "/images/gallery-3.png",
-    "/images/gallery-4.png",
-    "/images/gallery-5.png",
-    "/images/gallery-6.png"
+    "./images/gallery-1.png",
+    "./images/gallery-2.png",
+    "./images/gallery-3.png",
+    "./images/gallery-4.png",
+    "./images/gallery-5.png",
+    "./images/gallery-6.png"
   ];
 
   const testimonials = [
@@ -104,8 +104,8 @@ export function Home() {
               className="relative hidden lg:block h-[600px]"
             >
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-full blur-3xl opacity-50"></div>
-              <img src="/images/collection-jagannath.png" alt="Featured Cover" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 md:w-80 object-cover rounded-3xl shadow-2xl z-20 border border-white/10 rotate-[-5deg] hover:rotate-0 transition-transform duration-500" onError={(e) => (e.currentTarget.src = 'https://placehold.co/400x800/222/FFF?text=Hero+Image')} />
-              <img src="/images/collection-ikat.png" alt="Featured Cover 2" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 md:w-80 object-cover rounded-3xl shadow-2xl z-10 border border-white/10 translate-x-[20%] translate-y-[-10%] rotate-[10deg] opacity-80 blur-[2px]" onError={(e) => (e.currentTarget.src = 'https://placehold.co/400x800/222/FFF?text=Hero+Image')} />
+              <img src="./images/collection-jagannath.png" alt="Featured Cover" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 md:w-80 object-cover rounded-3xl shadow-2xl z-20 border border-white/10 rotate-[-5deg] hover:rotate-0 transition-transform duration-500" onError={(e) => (e.currentTarget.src = 'https://placehold.co/400x800/222/FFF?text=Hero+Image')} />
+              <img src="./images/collection-ikat.png" alt="Featured Cover 2" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 md:w-80 object-cover rounded-3xl shadow-2xl z-10 border border-white/10 translate-x-[20%] translate-y-[-10%] rotate-[10deg] opacity-80 blur-[2px]" onError={(e) => (e.currentTarget.src = 'https://placehold.co/400x800/222/FFF?text=Hero+Image')} />
             </motion.div>
           </div>
         </div>
@@ -236,7 +236,7 @@ export function Home() {
                 viewport={{ once: true }}
                 className="aspect-video bg-gray-900 rounded-lg overflow-hidden border border-gray-800"
               >
-                <img src="/images/lamination-1.png" alt="Lamination Process" className="w-full h-full object-cover" onError={(e) => (e.currentTarget.src = 'https://placehold.co/800x450/222/FFF?text=Lamination')} />
+                <img src="./images/lamination-1.png" alt="Lamination Process" className="w-full h-full object-cover" onError={(e) => (e.currentTarget.src = 'https://placehold.co/800x450/222/FFF?text=Lamination')} />
               </motion.div>
               <motion.div 
                 initial={{ opacity: 0, y: 30 }}
@@ -245,7 +245,7 @@ export function Home() {
                 transition={{ delay: 0.2 }}
                 className="aspect-video bg-gray-900 rounded-lg overflow-hidden border border-gray-800"
               >
-                <img src="/images/lamination-2.png" alt="Lamination Result" className="w-full h-full object-cover" onError={(e) => (e.currentTarget.src = 'https://placehold.co/800x450/222/FFF?text=Lamination')} />
+                <img src="./images/lamination-2.png" alt="Lamination Result" className="w-full h-full object-cover" onError={(e) => (e.currentTarget.src = 'https://placehold.co/800x450/222/FFF?text=Lamination')} />
               </motion.div>
             </div>
           </div>
@@ -305,7 +305,7 @@ export function Home() {
               viewport={{ once: true }}
               className="aspect-[4/3] bg-muted relative"
             >
-              <img src="/images/wholesale.png" alt="Wholesale Packaging" className="w-full h-full object-cover" onError={(e) => (e.currentTarget.src = 'https://placehold.co/800x600/333/FFF?text=Wholesale')} />
+              <img src="./images/wholesale.png" alt="Wholesale Packaging" className="w-full h-full object-cover" onError={(e) => (e.currentTarget.src = 'https://placehold.co/800x600/333/FFF?text=Wholesale')} />
               <div className="absolute bottom-6 left-6 bg-background/90 backdrop-blur p-4 border border-border">
                 <p className="font-bold text-lg">MOQ: 50 Pieces</p>
                 <p className="text-sm text-muted-foreground">Mixed models allowed</p>
